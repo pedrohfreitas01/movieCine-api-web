@@ -40,6 +40,7 @@ align-items: center;
     span{
         font-weight: bold;
         font-size: 120%;
+        text-align: center;
     }
 
     a{
