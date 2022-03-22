@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Container, MovieList, Movie } from "./style";
+
 
 
 function Home() {
@@ -42,8 +44,9 @@ function Home() {
                 {movies.map(movie => {      // percorrendo o array e retornar algo , .map percorre algo 
                     return (
                         <Movie key={movie.id}>
-                            <a href="https://google.com.br"><img src={`${image_url_movies}${movie.poster_path}`} alt={movie.title}></img>
-                            </a>
+
+                            <Link to={`/details/${movie.id}`}><img src={`${image_url_movies}${movie.poster_path}`} alt={movie.title}></img></Link>
+
                             <span>{movie.title}</span>
                         </Movie>
                     )
