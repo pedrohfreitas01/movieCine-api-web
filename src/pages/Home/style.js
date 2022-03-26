@@ -8,6 +8,14 @@ export const Container = styled.div`
         margin: 4rem auto;
     }
 
+    button{
+        padding: 0.8rem 2rem;
+        align-items: center;
+        margin-top: 4rem;
+        color: white;
+        background: #6654da;
+        border-radius: 0.5rem;
+    }
 
 `
 
